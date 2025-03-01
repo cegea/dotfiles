@@ -25,5 +25,12 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Get OS and architecture
+gon = require("os-name")
+
+os_name, arch_name = gon.getOS()
+print(("os=%q arch=%q"):format(gon.getOS()))
+--
+
 require("lazy").setup("plugins")
 
