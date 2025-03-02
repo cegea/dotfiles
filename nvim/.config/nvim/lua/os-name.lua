@@ -42,6 +42,7 @@ function M.getOS()
 		['^x86$'] = 'x86',
 		['i[%d]86'] = 'x86',
 		['amd64'] = 'x86_64',
+		['x64'] = 'x86_64',
 		['x86_64'] = 'x86_64',
 		['Power Macintosh'] = 'powerpc',
 		['^arm'] = 'arm',
