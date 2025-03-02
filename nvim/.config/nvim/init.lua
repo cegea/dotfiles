@@ -26,9 +26,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Get OS and architecture
-gon = require("os-name")
+local gon = require("os-name")
 
-os_name, arch_name = gon.getOS()
+local os_name, arch_name = gon.getOS()
 print(("os=%q arch=%q"):format(gon.getOS()))
 --
 
