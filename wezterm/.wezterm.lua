@@ -82,6 +82,33 @@ config.color_scheme = 'catppuccin-frappe'
 local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
 tabline.setup()
 
+-- Keys
+config.keys = {
+    {
+        key = 'w',
+        mods = 'SHIFT|ALT',
+        action = wezterm.action.CloseCurrentPane { confirm = true },
+    },
+    {
+        key = 't',
+        mods = 'SHIFT|ALT',
+        action = wezterm.action.SpawnTab 'CurrentPaneDomain',
+    },
+    {
+        key = '"',
+        mods = 'SHIFT|ALT',
+        action = wezterm.action.SplitPane {
+            direction = 'Right',
+            size = { Percent = 50 },
+        },
+    },
+    {
+        key = '%',
+        mods = 'SHIFT|ALT',
+        action = wezterm.action.SplitVertical {
+        },
+    },
+}
 -- and finally, return the configuration to wezterm
 return config
 
