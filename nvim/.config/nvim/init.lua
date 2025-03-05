@@ -31,6 +31,11 @@ local gon = require("os-name")
 local os_name, arch_name = gon.getOS()
 print(("os=%q arch=%q"):format(gon.getOS()))
 --
+-- Keys
+vim.cmd("set <M-h>=\\eh")
+vim.cmd("set <M-l>=\\el")
+vim.keymap.set('n', '<M-h>', ":bprev<CR>")
+vim.keymap.set('n', '<M-l>', ":bnext<CR>")
 
 require("lazy").setup("plugins")
 
