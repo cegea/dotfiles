@@ -25,12 +25,11 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Get OS and architecture
-local gon = require("os-name")
-
-local os_name, arch_name = gon.getOS()
-print(("os=%q arch=%q"):format(gon.getOS()))
+-- HOWTO: Get OS and architecture
+--local gon = require("os-name")
+--local os_name, arch_name = gon.getOS()
 --
+
 -- Keys
 vim.cmd("set <M-h>=\\eh")
 vim.cmd("set <M-l>=\\el")

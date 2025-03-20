@@ -15,7 +15,6 @@ function M.getOS()
     local uname = vim.loop.os_uname()
     local arch_name = arch_aliases[uname.machine] or uname.machine
     local os_name = uname.sysname
-    print(arch_name, os_name)
 
 	return os_name, arch_name
 end
