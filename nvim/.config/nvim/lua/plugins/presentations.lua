@@ -22,7 +22,7 @@ return {
                     local local_file = "temp.py"
                     local local_file_path = current_dir .. "/" .. local_file
                     vim.fn.writefile(vim.split(block.body, "\n"), local_file_path)
-                    local result = vim.system({ "python", local_file_path }, { text = true }):wait()
+                    local result = vim.system({ "python3", local_file_path }, { text = true }):wait()
                     vim.fn.delete(local_file_path)
                     return vim.split(result.stdout, "\n")
                 end
