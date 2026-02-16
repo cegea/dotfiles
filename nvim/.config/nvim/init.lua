@@ -33,6 +33,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Keys
 vim.cmd("set <M-h>=\\eh")
 vim.cmd("set <M-l>=\\el")
+vim.cmd("set <M-p>=\\ep")
 vim.keymap.set('n', '<M-h>', ":bprev<CR>")
 vim.keymap.set('n', '<M-l>', ":bnext<CR>")
 

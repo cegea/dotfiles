@@ -29,6 +29,6 @@ return {
             }
 
         })
-        vim.api.nvim_set_keymap('n', '<Leader>p', ':PresentStart<CR>', {})
+        vim.keymap.set('n', '<M-p>', ':PresentStart<CR>', {})
     end,
 }
