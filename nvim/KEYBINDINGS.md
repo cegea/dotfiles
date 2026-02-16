@@ -41,6 +41,9 @@
 | Normal | `<leader>to` | Neotest: abrir output | `.config/nvim/lua/plugins/neotest.lua` |
 | Normal | `<leader>ts` | Neotest: toggle summary | `.config/nvim/lua/plugins/neotest.lua` |
 | Normal | `<leader>tS` | Neotest: detener ejecución | `.config/nvim/lua/plugins/neotest.lua` |
+| Insert | `<C-j>` | Copilot: aceptar sugerencia | `.config/nvim/lua/plugins/copilot.lua` |
+| Normal | `<leader>ce` | Copilot: habilitar | `.config/nvim/lua/plugins/copilot.lua` |
+| Normal | `<leader>cd` | Copilot: deshabilitar | `.config/nvim/lua/plugins/copilot.lua` |
 
 ## Notas
 
